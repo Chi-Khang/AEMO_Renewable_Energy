@@ -1,6 +1,20 @@
 # ⚡ Renewable Energy Integration & Electricity Pricing in Queensland (2019–2025)
 
-This project investigates how **renewable energy integration** — especially **solar energy** — and **demand behavior** influence **electricity pricing** in Queensland, using data from the **National Electricity Market (NEM)** between **January 2019 and January 2025**.
+This project investigates how **renewable energy integration** — especially **solar energy** — and **demand behavior** influence **electricity pricing** in Queensland, and predict solar energy generation and electricity prices using data from the **Australian National Electricity Market (AEMO)** between **January 2019 and January 2025**.
+
+---
+
+## 🎯 Research Questions
+
+- Analysis research questions:
+
+How has the share of renewable energy been increasing in Australia?
+How does this growing solar energy penetration influence electricity pricing patterns and consumer demand behavior, particularly in Queensland?
+
+- Modeling research questions:
+
+How will solar energy and electricity prices evolve in coming years? How can they be modelled or projected?
+What is the potential for applying Transformer model in this field of energy and price prediction?
 
 ---
 
@@ -10,7 +24,8 @@ This project investigates how **renewable energy integration** — especially **
 - Understanding how **demand fluctuations** and **the integration fluctuations** contribute to **pricing volatility**.
 - Exploring **seasonal**, **daily**, and **holiday patterns** in generation, demand and power generation.
 - Building Dashboard for relationship and trend analysis.
-- Building **statistical models** to analyze and predict price movements.
+- Building **forecasting models** to analyze and predict price and solar generation for Queensland.
+
 
 ---
 
@@ -27,25 +42,22 @@ This project investigates how **renewable energy integration** — especially **
 
 ## 🗂️ Notebooks Overview
 
-| Notebook                                                                                     | Description                                                |
-|----------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| `[1D_EDA]AllData_Processing_Exploration.ipynb`                                                | Load and preprocess raw NEM data.                          |
-| `[2D_EDA]PowerGeneration_EnergySources_Analysis.ipynb`                                       | Explore renewable generation patterns over time.           |
-| `[2D_EDA]Pricing&Demand_with_RenewableEnergySources_Integration_Analysis.ipynb`              | Correlate pricing with solar generation and demand.        |
-| `[Modeling]Features_Engineering.ipynb`                                                       | Engineer temporal, demand, and solar-related features.     |
-| `[Modeling]Models_Build.ipynb`                                                               | Develop models (GLM, Mixed Linear Models) to explain price dynamics. |
-| `[Eval]ModelsEval_and_ResultsAnalysis.ipynb`                                                 | Analyze and validate model outputs.                        |
-| `[Tableau_Dashboard]DateProcessing_for_Dashboards.ipynb`                                     | Prepare data for Tableau visual dashboards.                |
-| `Common_Functions.ipynb`                                                                     | Shared utility functions used across notebooks.            |
+| Folder              | Purpose                                                                  |
+| ------------------- | ------------------------------------------------------------------------ |
+| `data_processing/`  | Preprocess and clean raw datasets; includes reusable utility functions.  |
+| `data_analysis/`    | Analyze trends in energy generation, demand, and pricing.                |
+| `data_modelling/`   | Build and train models to explain or predict electricity price/ solar.   |
+| `models/`           | Store best models.                                                       |
+| `model_deployment/` | Deploy model for production (simulation).                                |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `statsmodels`, `sklearn`, `holidays`
-- **Data Source**: NEM datasets (via CSV or SQLite)
+- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `sqlite3`, `holidays`, `statsmodels`, `scikit-learn`, `xgboost`, `keras`, `tensorflow`, `tensorflow-addons`, `shap`
+- **Data Source**: AEMO datasets (via CSV or SQLite)
 - **Visualization**: Tableau & Plotly
-- **Modeling**: GLM, Mixed Linear Models (MLM), time series analysis
+- **Modeling**: , statistical models (ANOVA, ttest, DM test), time series models (Transformer, LSTM, GRU, LSTM-Attention, hybrid models, etc)
 
 ---
 
@@ -55,3 +67,14 @@ Install required Python packages:
 
 ```bash
 pip install -r requirements.txt
+
+
+---
+## Results
+
+** One of the result images (univariate model - solar energy) **
+![Result Visualization](result.png)
+
+For a detailed presentation, view it here: [Google Slides Presentation](https://docs.google.com/presentation/d/1hurSQVaKEYKYdTDAFGarVOM05Atarhr4pqEn6pKJ0BY/edit?usp=sharing)
+
+
