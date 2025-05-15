@@ -1,4 +1,4 @@
-# ⚡ Renewable Energy Integration & Electricity Pricing in Queensland (2019–2025)
+# ⚡ Assessing Renewable Energy Efficacy: A Queensland-based Analysis of Solar Generation and Electricity Prices Dynamics
 
 This project investigates how **renewable energy integration** — especially **solar energy** — and **demand behavior** influence **electricity pricing** in Queensland, and predict solar energy generation and electricity prices using data from the **Australian National Electricity Market (AEMO)** between **January 2019 and January 2025**.
 
@@ -18,18 +18,21 @@ What is the potential for applying Transformer model in this field of energy and
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Project Tasks
 
-- Quantifying the **impact of solar generation** on electricity prices.
-- Understanding how **demand fluctuations** and **the integration fluctuations** contribute to **pricing volatility**.
-- Exploring **seasonal**, **daily**, and **holiday patterns** in generation, demand and power generation.
-- Building Dashboard for relationship and trend analysis.
-- Building **forecasting models** to analyze and predict price and solar generation for Queensland.
+- Quantifying the **impact of solar generation and demand** on electricity prices.
+- Exploring **seasonal**, **daily**, and **holiday patterns** in generation, demand and solar generation.
+- Conduct **statistical models** to test insights.
+- Building dashboard for relationship and trend analysis for Queensland.
+- Building **forecasting models** to predict price and solar generation for Queensland.
+- Evaluate and compare results by MAE, RMSE, etc and DM test.
 
 
 ---
 
 ## 🧱 Data Sources
+
+- Data is from Australian Electricity Market (AEMO website) from Jan 2019 to Jan 2025.
 
 | Dataset                     | Description                                                |
 |-----------------------------|------------------------------------------------------------|
@@ -54,7 +57,7 @@ What is the potential for applying Transformer model in this field of energy and
 
 ## 🛠️ Tech Stack
 
-- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `sqlite3`, `holidays`, `statsmodels`, `scikit-learn`, `xgboost`, `keras`, `tensorflow`, `tensorflow-addons`, `shap`
+- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `sqlite3`, `holidays`, `statsmodels`, `scikit-learn`, `xgboost`, `keras`, `tensorflow`, `shap`
 - **Data Source**: AEMO datasets (via CSV or SQLite)
 - **Visualization**: Tableau & Plotly
 - **Modeling**: , statistical models (ANOVA, ttest, DM test), time series models (Transformer, LSTM, GRU, LSTM-Attention, hybrid models, etc)
