@@ -61,6 +61,14 @@ What is the potential for applying Transformer model in this field of energy and
 
 ---
 
+## Results
+
+** One of the result images (univariate model - solar energy) **
+![Solar Energy Generation Prediction](result.png)
+
+For a detailed presentation, view it here: [Google Slides Presentation](https://docs.google.com/presentation/d/1hurSQVaKEYKYdTDAFGarVOM05Atarhr4pqEn6pKJ0BY/edit?usp=sharing)
+
+---
 ## 📦 Setup
 
 Install required Python packages:
@@ -68,13 +76,5 @@ Install required Python packages:
 ```bash
 pip install -r requirements.txt
 
-
----
-## Results
-
-** One of the result images (univariate model - solar energy) **
-![Result Visualization](result.png)
-
-For a detailed presentation, view it here: [Google Slides Presentation](https://docs.google.com/presentation/d/1hurSQVaKEYKYdTDAFGarVOM05Atarhr4pqEn6pKJ0BY/edit?usp=sharing)
 
 
